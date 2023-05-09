@@ -1,0 +1,16 @@
+[
+  {
+    "CONDITION_NAME": "Acute blood loss anemia",
+    "HISTORIC": "5",
+    "CURRENT": "10",
+    "CHANGE": "5",
+    "CHANGE_ERROR": "4"
+  },
+  {
+    "CONDITION_NAME": "Acute heart failure",
+    "HISTORIC": "15",
+    "CURRENT": "7",
+    "CHANGE": "-8",
+    "CHANGE_ERROR": "3"
+  }
+]

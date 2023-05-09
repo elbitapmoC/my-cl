@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  color: #fff;
+  background-color: #111827;
+}
+
+.min-h-full {
+  min-height: 80%;
+}
+
+/* For Chrome or Safari */
+progress::-webkit-progress-bar {
+  background-color: unset;
+}
+
+progress::-webkit-progress-value {
+  background-color: #fff !important;
+  border-radius: 100px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #fff !important;
+  border-radius: 100px;
+}
+
+/* For IE10 */
+progress {
+  background-color: #eee;
+}
+
+input[type="radio"]:after {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  position: relative;
+  background-color: #535353;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  position: relative;
+  background-color: #4F46E5;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
