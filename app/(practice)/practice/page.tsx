@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 
 import questions from "@/app/api/questions.json";
 import { useQuestionStore } from "@/app/Store";
+import PracticeNav from "@/app/components/PracticeNav";
 
 const PracticeTestPage = () => {
   const show = useQuestionStore((state) => state.showScore);
@@ -28,7 +29,7 @@ const PracticeTestPage = () => {
           <aside className="flex flex-col items-start w-full">
             <label
               htmlFor="file"
-              className="mb-3 text-base text-gray-500 sm:text-lg dark:text-gray-400"
+              className="mb-3 text-base sm:text-lg text-gray-400"
             >
               Question {current + 1} of {total}
             </label>
@@ -49,7 +50,7 @@ const PracticeTestPage = () => {
               {questions[current].options.map((option, index) => (
                 <li
                   key={index}
-                  className={`border-gray-200 rounded-t-lg dark:border-gray-600 ${
+                  className={`rounded-t-lg border-gray-600 ${
                     index !== total && "border-b"
                   }`}
                 >
@@ -59,7 +60,7 @@ const PracticeTestPage = () => {
                       type="radio"
                       value={option}
                       name={option}
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                      className="w-4 h-4  focus:ring-gray-900 ring-offset-gray-700 focus:ring-offset-gray-700 focus:ring-2 bg-gray-600 border-gray-500"
                       // TODO: Fix issue... onChange is adding onto our array. We need it to replace.
                       onChange={() =>
                         handleSelect((selectedOptions[current] = option))
@@ -68,7 +69,7 @@ const PracticeTestPage = () => {
                     />
                     <label
                       htmlFor={option}
-                      className="w-full py-3 ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="w-full py-3 ml-3 text-sm font-medium text-gray-300"
                     >
                       {option}
                     </label>
@@ -78,23 +79,7 @@ const PracticeTestPage = () => {
             </ul>
           </article>
 
-          <aside className="flex font-medium justify-between w-full mt-4 text-white">
-            <button
-              disabled={current === 0 && true}
-              className={`w-[49%] py-3 rounded-lg mr-2 disabled ${
-                current === 0 && "cursor-not-allowed opacity-25"
-              }`}
-              onClick={handlePrevious}
-            >
-              Previous
-            </button>
-            <button
-              onClick={handleNext}
-              className="w-[49%] py-3 bg-teal-600 rounded-lg ml-2"
-            >
-              {current + 1 === total ? "Submit" : "Next"}
-            </button>
-          </aside>
+          <PracticeNav />
         </article>
       )}
     </>
