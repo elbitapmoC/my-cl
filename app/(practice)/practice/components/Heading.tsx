@@ -16,7 +16,7 @@ const QuestionHeading = () => {
         id="file"
         value={current + 1}
         max={total}
-        className="bg-teal-600 w-full h-2 rounded-full"
+        className="bg-white w-full h-2 rounded-full"
       />
       <p className="mt-12 text-2xl text-white font-bold mb-2">
         {questions[current].question}

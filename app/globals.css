@@ -20,18 +20,18 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #fff !important;
+  background-color: #1abb9c !important;
   border-radius: 100px;
 }
 
 progress::-moz-progress-bar {
-  background-color: #fff !important;
+  background-color: #1abb9c !important;
   border-radius: 100px;
 }
 
 /* For IE10 */
 progress {
-  background-color: #eee;
+  background-color: #1abb9c;
 }
 
 input[type="radio"]:after {
