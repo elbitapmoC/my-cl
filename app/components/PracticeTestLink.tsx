@@ -15,9 +15,9 @@ const PracticeTestLink = () => {
     >
       <Icons icon={TfiGame} />
       <aside className="text-left">
-        <p className="mb-1 text-xs">Play again?</p>
+        <p className="mb-1 text-xs">Before the big event..</p>
         <p className="-mt-1 font-sans text-sm font-semibold">
-          Reset Practice Test
+          Do A Practice Test
         </p>
       </aside>
     </Link>
