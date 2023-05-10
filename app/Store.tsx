@@ -1,6 +1,8 @@
 import { create } from "zustand";
-
+import questions from "@/app/api/questions.json";
 interface QuestionState {
+  questions: any;
+  total: number;
   current: number;
   score: number;
   showScore: boolean;
@@ -11,6 +13,8 @@ interface QuestionState {
 }
 
 export const useQuestionStore = create<QuestionState>()((set) => ({
+  questions,
+  total: questions.length,
   current: 0,
   score: 0,
   showScore: false,

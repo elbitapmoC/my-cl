@@ -1,10 +1,10 @@
 import React from "react";
-import questions from "@/app/api/questions.json";
 import { useQuestionStore } from "@/app/Store";
 
 const QuestionHeading = () => {
   const current = useQuestionStore((state) => state.current);
-  const total = questions.length;
+  const total = useQuestionStore((state) => state.total);
+  const questions = useQuestionStore((state) => state.questions);
 
   return (
     <aside className="flex flex-col items-start w-full">

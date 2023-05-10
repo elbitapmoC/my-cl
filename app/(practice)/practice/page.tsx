@@ -1,15 +1,14 @@
 "use client";
 import React from "react";
 
-import questions from "@/app/api/questions.json";
 import { useQuestionStore } from "@/app/Store";
-import PracticeNav from "@/app/(practice)/practice/components/Nav";
+import TestNav from "@/app/(practice)/practice/components/TestNav";
 import Heading from "./components/Heading";
 import Options from "./components/Options";
 
 const PracticeTestPage = () => {
   const show = useQuestionStore((state) => state.showScore);
-  const total = questions.length;
+  const total = useQuestionStore((state) => state.total);
   const correct = useQuestionStore((state) => state.score);
 
   return (
@@ -22,7 +21,7 @@ const PracticeTestPage = () => {
         <article className="w-full p-4 border rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700 max-w-lg">
           <Heading />
           <Options />
-          <PracticeNav />
+          <TestNav />
         </article>
       )}
     </>

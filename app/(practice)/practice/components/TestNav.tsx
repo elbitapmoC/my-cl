@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-
-import questions from "@/app/api/questions.json";
 import { useQuestionStore } from "@/app/Store";
 
-const Nav = () => {
+const TestNav = () => {
   const current = useQuestionStore((state) => state.current);
-  const total = questions.length;
+  const total = useQuestionStore((state) => state.total);
   const handleNext = useQuestionStore((state) => state.next);
   const handlePrevious = useQuestionStore((state) => state.previous);
 
@@ -31,4 +29,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default TestNav;
