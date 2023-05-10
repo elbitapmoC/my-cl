@@ -1,5 +1,3 @@
-// Forms, Buttons, inputs, etc. - These aren't compatible w/ server components.
-// We want to use the above mentioned and make this form interactive.
 "use client";
 
 import Icons from "./Icons";
@@ -13,9 +11,7 @@ const Landing = () => {
   return (
     <article className="w-full p-4 text-center border border-gray-200 rounded-lg shadow sm:p-8 bg-gray-800 dark:border-gray-700 max-w-5xl">
       <Title title="ClinIntell | Mission Briefing" />
-
       <Subtitle text="Create an app that focuses on data visualization & users taking a test." />
-
       <aside className="mt-8 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
         <Link
           href="/visualize"
@@ -31,7 +27,7 @@ const Landing = () => {
         </Link>
 
         <Link
-          href="/practice_intro"
+          href="/practice"
           className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
         >
           <Icons icon={TfiGame} />

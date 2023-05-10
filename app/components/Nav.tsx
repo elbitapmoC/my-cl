@@ -11,14 +11,15 @@ const Nav = () => {
       justify-center
       py-6
       sm:px-6
-      lg:px-8"
+      lg:px-8
+      items-center"
     >
       <Link href="./">
         <Image
           alt="Logo"
           height="48"
           width="48"
-          className="mx-auto my-auto"
+          className="w-auto h-auto float-logo"
           src="/images/logo.svg"
         />
       </Link>
