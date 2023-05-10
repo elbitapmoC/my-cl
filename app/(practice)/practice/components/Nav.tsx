@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 
 import questions from "@/app/api/questions.json";
 import { useQuestionStore } from "@/app/Store";
 
-const PracticeNav = () => {
+const Nav = () => {
   const current = useQuestionStore((state) => state.current);
   const total = questions.length;
   const handleNext = useQuestionStore((state) => state.next);
@@ -31,4 +31,4 @@ const PracticeNav = () => {
   );
 };
 
-export default PracticeNav;
+export default Nav;
