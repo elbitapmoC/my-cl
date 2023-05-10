@@ -2,13 +2,14 @@
 import React from "react";
 import { useQuestionStore } from "@/app/Store";
 
-const TestNav = () => {
+const Nav = () => {
   const current = useQuestionStore((state) => state.current);
   const total = useQuestionStore((state) => state.total);
   const selected = useQuestionStore((state) => state.selected);
 
   const handleNext = useQuestionStore((state) => state.next);
   const handlePrevious = useQuestionStore((state) => state.previous);
+  const handleSubmit = useQuestionStore((state) => state.submit);
 
   return (
     <aside className="flex font-medium justify-between w-full mt-4 text-white">
@@ -26,7 +27,7 @@ const TestNav = () => {
         className={`w-[49%] py-3 bg-teal-600 rounded-lg ml-2 ${
           !selected[current] && "cursor-not-allowed opacity-25 disabled"
         }`}
-        onClick={handleNext}
+        onClick={current + 1 === total ? handleSubmit : handleNext}
       >
         {current + 1 === total ? "Submit" : "Next"}
       </button>
@@ -34,4 +35,4 @@ const TestNav = () => {
   );
 };
 
-export default TestNav;
+export default Nav;
