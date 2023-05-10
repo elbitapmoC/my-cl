@@ -1,23 +1,31 @@
 import { create } from "zustand";
 
+type Selected = {
+  option: string;
+  index: number;
+};
 interface QuestionState {
-  currentQuestion: number;
-  userAnswers: string[];
+  current: number;
   score: number;
   showScore: boolean;
   next: () => void;
   previous: () => void;
+  selected: string[];
+  handleSelected: ({ option, index }: Selected) => void;
 }
 
 export const useQuestionStore = create<QuestionState>()((set) => ({
-  currentQuestion: 0,
-  userAnswers: [],
+  current: 0,
   score: 0,
   showScore: false,
-  previous: () =>
-    set((state) => ({ currentQuestion: state.currentQuestion - 1 })),
+  previous: () => set((state) => ({ current: state.current - 1 })),
   next: () =>
     set((state) => ({
-      currentQuestion: state.currentQuestion + 1,
+      current: state.current + 1,
+    })),
+  selected: [],
+  handleSelected: ({ option, index }) =>
+    set((state) => ({
+      selected: [...state.selected, option[index]],
     })),
 }));

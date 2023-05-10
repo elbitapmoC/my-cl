@@ -33,3 +33,29 @@ progress::-moz-progress-bar {
 progress {
   background-color: #eee;
 }
+
+input[type="radio"]:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  position: relative;
+  background-color: #1abb9c;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
