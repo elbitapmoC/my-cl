@@ -1,7 +1,14 @@
 import { create } from "zustand";
 import questions from "@/app/api/questions.json";
+
+type Questions = {
+  question: string;
+  options: string[];
+  answer: string;
+};
+
 interface QuestionState {
-  questions: any;
+  questions: Questions[];
   total: number;
   current: number;
   score: number;
