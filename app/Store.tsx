@@ -6,7 +6,7 @@ interface QuestionState {
   showScore: boolean;
   next: () => void;
   previous: () => void;
-  selected: [];
+  selected: string[];
   handleSelected: (option) => void;
 }
 
