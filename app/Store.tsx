@@ -1,17 +1,13 @@
 import { create } from "zustand";
 
-type Selected = {
-  option: string;
-  index: number;
-};
 interface QuestionState {
   current: number;
   score: number;
   showScore: boolean;
   next: () => void;
   previous: () => void;
-  selected: string[];
-  handleSelected: ({ option, index }: Selected) => void;
+  selected: [];
+  handleSelected: (option) => void;
 }
 
 export const useQuestionStore = create<QuestionState>()((set) => ({
@@ -24,8 +20,8 @@ export const useQuestionStore = create<QuestionState>()((set) => ({
       current: state.current + 1,
     })),
   selected: [],
-  handleSelected: ({ option, index }) =>
+  handleSelected: (option) =>
     set((state) => ({
-      selected: [...state.selected, option[index]],
+      selected: { ...state.selected },
     })),
 }));
