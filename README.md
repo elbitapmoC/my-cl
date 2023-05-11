@@ -1,10 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🥷 ClinIntell Mission Briefing :
 
-## Getting Started
+### Assignment: Create an app that focuses on data visualization & users taking a test.
+
+<hr>
+###### Data Visualization Page - Show a table using given data.
+  - Use `conditionData` array.
+  - The table columns are the property.
+  - Keys (CONDITION_NAME, etc..)
+  - If CHANGE value is positive && greater than CHANGE_ERROR value, set cell color of CHANGE to green.
+  - If CHANGE is negative && the **absolute** value is greater than CHANGE_ERROR, then set the cell color of CHANGE to red.
+<br>
+###### Online Test page - Activates a test questionnaire. (3 Test questions) `testQuestions` object.
+  - Show Questions one at a time.
+  - Answering questions should transition to the next question in the
+   sequence.
+  - One answer per question. 
+  - Submit button to submit form.
+  - Output results to the console.
+  
+  **BONUS - Progress bar that updates.**
+
+## Dev Notes / What we used
+
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
+  - Scalable bearbones state management solution
+  - Quick to learn (I learned it for this project)
+  - Lightweight
+  - Fast
+- [AG-Grid](https://www.ag-grid.com/react-data-grid/getting-started/)
+  - Visualize data
+  - Use charts
+  - Use graphs
+- [SOLID Principles](https://www.youtube.com/watch?v=MSq_DCRxOxw&t=27s)
+- Responsiveness
+
+- [Apollo GraphQL](https://www.apollographql.com/)
+  - Fixes the issue of over-fetching
+  - Fixes the issue of making multiple requests for multiple resources
+- [NextJS](https://nextjs.org/)
+  - Lots of features
+  - Performance! Performance! Performance!
+  - SEO
+  - Accesibility
+  - plus so much more
+- [React](https://reactjs.org/)
+  - Components. Create once, use everywhere.
+  - Big time saver.
+  - Very large community, which means great support.
+  - There's nothing I can't figure out
+- [Tailwind CSS](https://tailwindcss.com/docs/installation)
+  - Utility-first CSS framework
+  - Less time thinking of class names, more time making progress.
+  - Lightweight because it's use what you need, it won't download everything from the framework.
+  - Responsiveness
+  - UI 👍
+
+### How to run app & test
 
 First, run the development server:
 
 ```bash
+#STEP 1 - install dependencies
+npm i
+```
+
+```bash
+#STEP 2 - run build
 npm run dev
 # or
 yarn dev
@@ -13,10 +74,6 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
@@ -32,3 +89,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Future Improvements / Thoughts
+
+- SolidJS?
+- Svelte?
+- Scale into a larger app.
+  - Quizlet and Kahoots are great inspo.
+- Zustand was VERY pleasant to use.
