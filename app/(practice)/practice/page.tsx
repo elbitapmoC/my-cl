@@ -6,7 +6,6 @@ import { useQuestionStore } from "@/app/Store";
 import Nav from "@/app/(practice)/practice/components/Nav";
 import Heading from "./components/Heading";
 import Options from "./components/Options";
-import PracticeTestLink from "@/app/components/PracticeTestLink";
 import HomeLink from "@/app/components/HomeLink";
 
 const PracticeTestPage = () => {

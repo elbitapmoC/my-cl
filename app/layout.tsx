@@ -16,18 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Nav />
-        <main
-          className="
-          flex
-          min-h-full
-          flex-col
-          justify-center
-          items-center
-          py-12
-          sm:px-6
-          lg:px-8
-        "
-        >
+        <main className="flex min-h-full flex-col justify-center items-center py-12 sm:px-6 lg:px-8">
           {children}
         </main>
         <Footer />

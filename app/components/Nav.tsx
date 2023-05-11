@@ -4,17 +4,9 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav
-      className="
-      flex
-      flex-col
-      justify-center
-      py-6
-      sm:px-6
-      lg:px-8
-      items-center"
-    >
-      <Link href="./">
+    <nav className="flex justify-center py-6 gap-12 sm:px-6 lg:px-8 items-center">
+      {/* <Link href="/visualize">Data Vis</Link> */}
+      <Link href="/">
         <Image
           alt="Logo"
           height="48"
@@ -23,6 +15,7 @@ const Nav = () => {
           src="/images/logo.svg"
         />
       </Link>
+      {/* <Link href="/practice">Practice Test</Link> */}
     </nav>
   );
 };
