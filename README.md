@@ -30,6 +30,7 @@ _(Oh great! You've made it this far. I see you love documentation too. Proceed.)
 ### Assignment: Create an app that focuses on data visualization & users taking a test.
 
 <hr>
+
 ###### Data Visualization Page - Show a table using given data.
   - Use `conditionData` array.
   - The table columns are the property.
@@ -37,6 +38,7 @@ _(Oh great! You've made it this far. I see you love documentation too. Proceed.)
   - If CHANGE value is positive && greater than CHANGE_ERROR value, set cell color of CHANGE to green.
   - If CHANGE is negative && the **absolute** value is greater than CHANGE_ERROR, then set the cell color of CHANGE to red.
 <br>
+
 ###### Online Test page - Activates a test questionnaire. (3 Test questions) `testQuestions` object.
   - Show Questions one at a time.
   - Answering questions should transition to the next question in the
@@ -44,7 +46,7 @@ _(Oh great! You've made it this far. I see you love documentation too. Proceed.)
   - One answer per question. 
   - Submit button to submit form.
   - Output results to the console.
-  
+
   **BONUS - Progress bar that updates.**
 
 ![Screenshot 2023-05-11 at 2 52 06 AM](https://github.com/elbitapmoC/my-clinintell/assets/11306948/58d3d20a-0242-4bcd-803a-d5cac5171459)
