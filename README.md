@@ -1,3 +1,29 @@
+TLDR;
+
+### How to run app & test
+
+First, run the development server:
+
+```bash
+#STEP 1 - install dependencies
+npm i
+```
+
+```bash
+#STEP 2 - run build
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+<hr>
+
+_(Oh great! You've made it this far. I see you love documentation too. Proceed.)_
+
 # 🥷 ClinIntell Mission Briefing :
 
 ### Assignment: Create an app that focuses on data visualization & users taking a test.
@@ -54,26 +80,6 @@
   - Lightweight because it's use what you need, it won't download everything from the framework.
   - Responsiveness
   - UI 👍
-
-### How to run app & test
-
-First, run the development server:
-
-```bash
-#STEP 1 - install dependencies
-npm i
-```
-
-```bash
-#STEP 2 - run build
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Learn More
 
