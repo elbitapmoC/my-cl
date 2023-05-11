@@ -1,4 +1,5 @@
 TLDR;
+![Screenshot 2023-05-11 at 2 50 37 AM](https://github.com/elbitapmoC/my-clinintell/assets/11306948/fe53a439-ac76-4ee4-a5eb-08dccba60b5d)
 
 ### How to run app & test
 
@@ -29,6 +30,7 @@ _(Oh great! You've made it this far. I see you love documentation too. Proceed.)
 ### Assignment: Create an app that focuses on data visualization & users taking a test.
 
 <hr>
+
 ###### Data Visualization Page - Show a table using given data.
   - Use `conditionData` array.
   - The table columns are the property.
@@ -36,6 +38,7 @@ _(Oh great! You've made it this far. I see you love documentation too. Proceed.)
   - If CHANGE value is positive && greater than CHANGE_ERROR value, set cell color of CHANGE to green.
   - If CHANGE is negative && the **absolute** value is greater than CHANGE_ERROR, then set the cell color of CHANGE to red.
 <br>
+
 ###### Online Test page - Activates a test questionnaire. (3 Test questions) `testQuestions` object.
   - Show Questions one at a time.
   - Answering questions should transition to the next question in the
@@ -43,8 +46,14 @@ _(Oh great! You've made it this far. I see you love documentation too. Proceed.)
   - One answer per question. 
   - Submit button to submit form.
   - Output results to the console.
-  
+
   **BONUS - Progress bar that updates.**
+
+![Screenshot 2023-05-11 at 2 52 06 AM](https://github.com/elbitapmoC/my-clinintell/assets/11306948/58d3d20a-0242-4bcd-803a-d5cac5171459)
+![Screenshot 2023-05-11 at 2 52 16 AM](https://github.com/elbitapmoC/my-clinintell/assets/11306948/7fabf82a-c125-4d26-a955-522d8f11c7f8)
+![Screenshot 2023-05-11 at 2 52 29 AM](https://github.com/elbitapmoC/my-clinintell/assets/11306948/ba13c584-41e4-4ecb-ac4a-48f61dc91f73)
+![Screenshot 2023-05-11 at 2 54 15 AM](https://github.com/elbitapmoC/my-clinintell/assets/11306948/1051d7f4-9d0b-475b-8582-963f7147833a)
+
 
 ## Dev Notes / What we used
 
