@@ -45,7 +45,7 @@ export const useQuestionStore = create<QuestionState>()((set) => ({
     })),
 }));
 
-const calcScore = (questions, selected) => {
+const calcScore = (questions: Questions[], selected: {}) => {
   let newScore = 0;
   for (let i = 0; i < questions.length; i++) {
     if (questions[i].answer === selected[i]) {

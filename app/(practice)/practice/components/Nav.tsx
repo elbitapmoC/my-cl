@@ -3,13 +3,9 @@ import React from "react";
 import { useQuestionStore } from "@/app/Store";
 
 const Nav = () => {
-  const current = useQuestionStore((state) => state.current);
-  const total = useQuestionStore((state) => state.total);
-  const selected = useQuestionStore((state) => state.selected);
-
-  const handleNext = useQuestionStore((state) => state.next);
-  const handlePrevious = useQuestionStore((state) => state.previous);
-  const handleSubmit = useQuestionStore((state) => state.submit);
+  const { current, total, selected, next, previous, submit } = useQuestionStore(
+    (state) => state
+  );
 
   return (
     <aside className="flex font-medium justify-between w-full mt-4 text-white">
@@ -18,7 +14,7 @@ const Nav = () => {
         className={`w-[49%] py-3 rounded-lg mr-2 ${
           current === 0 && "cursor-not-allowed opacity-25 disabled"
         }`}
-        onClick={handlePrevious}
+        onClick={previous}
       >
         Previous
       </button>
@@ -27,7 +23,7 @@ const Nav = () => {
         className={`w-[49%] py-3 bg-teal-600 rounded-lg ml-2 ${
           !selected[current] && "cursor-not-allowed opacity-25 disabled"
         }`}
-        onClick={current + 1 === total ? handleSubmit : handleNext}
+        onClick={current + 1 === total ? submit : next}
       >
         {current + 1 === total ? "Submit" : "Next"}
       </button>

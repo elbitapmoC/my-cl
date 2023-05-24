@@ -34,10 +34,10 @@ const ConditionDataTable = () => {
   const [columnDefs] = useState(colDef);
 
   return (
-    <div className="ag-theme-alpine" style={{ height: 171 }}>
+    <aside className="ag-theme-alpine" style={{ height: 200 }}>
       <p className="mb-4 text-white">Condition Data Table</p>
       <AgGridReact rowData={rowData} columnDefs={columnDefs}></AgGridReact>
-    </div>
+    </aside>
   );
 };
 

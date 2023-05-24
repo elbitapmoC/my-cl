@@ -3,12 +3,9 @@ import React from "react";
 import { useQuestionStore } from "@/app/Store";
 
 const Options = () => {
-  const current = useQuestionStore((state) => state.current);
-  const total = useQuestionStore((state) => state.total);
-  const questions = useQuestionStore((state) => state.questions);
+  const { current, total, questions, selected, handleSelected } =
+    useQuestionStore((state) => state);
 
-  const selectedOptions = useQuestionStore((state) => state.selected);
-  const handleSelect = useQuestionStore((state) => state.handleSelected);
   return (
     <article className="flex flex-col w-full">
       <ul className="w-full text-sm font-medium text-gray-900 border rounded-lg bg-gray-900 border-gray-600">
@@ -26,10 +23,8 @@ const Options = () => {
                 value={option}
                 name={option}
                 className="w-4 h-4  focus:ring-gray-900 ring-offset-gray-700 focus:ring-offset-gray-700 focus:ring-2 bg-gray-600 border-gray-500"
-                onChange={() =>
-                  handleSelect((selectedOptions[current] = option))
-                }
-                checked={option === selectedOptions[current]}
+                onChange={() => handleSelected((selected[current] = option))}
+                checked={option === selected[current]}
               />
               <label
                 htmlFor={option}

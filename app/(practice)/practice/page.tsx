@@ -9,9 +9,7 @@ import Options from "./components/Options";
 import HomeLink from "@/app/components/HomeLink";
 
 const PracticeTestPage = () => {
-  const showScore = useQuestionStore((state) => state.showScore);
-  const total = useQuestionStore((state) => state.total);
-  const correct = useQuestionStore((state) => state.score);
+  const { showScore, total, score } = useQuestionStore((state) => state);
 
   return (
     <>
@@ -19,7 +17,7 @@ const PracticeTestPage = () => {
         <>
           <Confetti />
           <h1 className="text-3xl font-semibold text-center text-white mb-8">
-            You scored {correct} out of {total}
+            You scored {score} out of {total}
           </h1>
           <HomeLink />
         </>
