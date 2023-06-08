@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 _(Oh great! You've made it this far. I see you love documentation too. Proceed.)_
 
-# 🥷 ClinIntell Mission Briefing :
+# 🥷 Mission Briefing :
 
 ### Assignment: Create an app that focuses on data visualization & users taking a test.
 
